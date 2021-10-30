@@ -8,6 +8,8 @@ module RenderCow
     private
 
     def cow?(options)
+      return unless options.is_a?(Hash)
+
       options[:cow] || options[:cowsay]
     end
 
