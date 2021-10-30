@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir['{config,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
 
   spec.add_dependency('cowsay')
-  spec.add_dependency('rails', '~> 6.1.4')
+  spec.add_dependency('rails', '>= 6.0')
   spec.add_development_dependency('byebug')
   spec.add_development_dependency('rubocop')
   spec.add_development_dependency('rubocop-shopify')

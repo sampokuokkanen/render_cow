@@ -3,7 +3,7 @@ PATH
   specs:
     render_cow (0.1.0)
       cowsay
-      rails (~> 6.1.4)
+      rails (>= 6.0)
 
 GEM
   remote: https://rubygems.org/
