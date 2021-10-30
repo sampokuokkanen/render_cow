@@ -1,5 +1,6 @@
 # Changelog
 
+Partial rendering is broken. Monkeypatching can be a bit difficult!
 ## 0.2.0
 
 A new and exciting feature! 
