@@ -6,4 +6,6 @@ class ApplicationController < ActionController::Base
   def cow
     render(cow: 'Moo')
   end
+
+  def normal; end
 end

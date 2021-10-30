@@ -1,9 +1,7 @@
 module RenderCow
   module RenderCowPatch
     def render(options = {}, args = {})
-      options[:plain] = if cow?(options)
-        cowspeach(options).then { RenderCow.moo(_1) }
-      end
+      options[:plain] = cowspeach(options).then { RenderCow.moo(_1) } if cow?(options)
       super
     end
 
