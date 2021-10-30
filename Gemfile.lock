@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    render_cow (0.2.0)
+    render_cow (0.3.0)
       cowsay
       rails (>= 6.0)
 
