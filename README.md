@@ -18,6 +18,8 @@ Well now you can!
 ## Usage
 
 In your controller, replace calls with `render plain:` to `render cowsay:` or `render cow:`.
+(You can still use render plain: and render partial: and others too, but you get invested cow superpowers by this gem)
+
 
 ```ruby
 class ApplicationController < ActionController::Base
@@ -47,6 +49,9 @@ Or install it yourself as:
 ```bash
 $ gem install render_cow
 ```
+
+This gem uses [cowsay](https://rubygems.org/gems/cowsay) as the cow rendering engine. 
+So this gem is just the Rails cow patch on the render method. 
 
 ## Contributing
 Feel free to contribute. 
