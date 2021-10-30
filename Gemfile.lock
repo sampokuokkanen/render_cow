@@ -138,6 +138,8 @@ GEM
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.12.0)
       parser (>= 3.0.1.1)
+    rubocop-shopify (2.3.0)
+      rubocop (~> 1.22)
     ruby-progressbar (1.11.0)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
@@ -163,6 +165,7 @@ DEPENDENCIES
   byebug
   render_cow!
   rubocop
+  rubocop-shopify
   sqlite3
 
 BUNDLED WITH

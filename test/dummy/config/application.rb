@@ -1,15 +1,15 @@
-require_relative "boot"
+require_relative 'boot'
 
-require "rails/all"
+require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
-require "render_cow"
+require 'render_cow'
 
 module Dummy
   class Application < Rails::Application
-    config.load_defaults Rails::VERSION::STRING.to_f
+    config.load_defaults(Rails::VERSION::STRING.to_f)
 
     # Configuration for the application, engines, and railties goes here.
     #

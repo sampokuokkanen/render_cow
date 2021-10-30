@@ -1,9 +1,19 @@
-require "test_helper"
+require 'test_helper'
 
 class NavigationTest < ActionDispatch::IntegrationTest
-  test "access cow path" do
-    get "/"
+  def default_moo
+    RenderCow.moo('Moo')
+  end
+
+  test 'access cow path' do
+    get '/'
     assert_response :success
-    assert_equal response.body, Cowsay::Character::Cow.say("Moo") 
+    assert_equal response.body, default_moo
+  end
+
+  test 'can also just use cow:' do
+    get '/moo'
+    assert_response :success
+    assert_equal response.body, default_moo
   end
 end
