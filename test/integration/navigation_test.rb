@@ -21,4 +21,9 @@ class NavigationTest < ActionDispatch::IntegrationTest
     get '/normal'
     assert_includes response.body, 'Hello'
   end
+
+  test 'can render in views' do
+    get '/cow_partial'
+    assert_includes response.body, 'cowsay'
+  end
 end

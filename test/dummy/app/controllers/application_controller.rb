@@ -8,4 +8,6 @@ class ApplicationController < ActionController::Base
   end
 
   def normal; end
+
+  def cow_partial; end
 end
