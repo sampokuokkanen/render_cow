@@ -11,6 +11,7 @@ RenderCow cowpatches the Rails render method to allow you to directly use cowsay
 Have you ever wanted to just render a cow?
 Well now you can!
 
+[See RenderCow in Action!](https://wasurechatta.com/moo?moo=RenderCow%20in%20action!)
 
 ## Usage
 
