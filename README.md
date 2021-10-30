@@ -1,12 +1,13 @@
 ```bash
-_____ 
-| RenderCow |
- ----- 
+ ______________________ 
+|     RenderCow!       |
+ ---------------------- 
       \   ^__^
        \  (oo)\_______
           (__)\       )\/\
               ||----w |
               ||     ||
+
 ```
 RenderCow cowpatches the Rails render method to allow you to directly use cowsay. 
 Have you ever wanted to just render a cow?
