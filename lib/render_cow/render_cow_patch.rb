@@ -9,8 +9,8 @@ module RenderCow
 
     def character(options = {})
       options[:cow] = options.delete(:cowsay) if options.key?(:cowsay)
-      @character ||= options.detect do |key|
-        RenderCow.characters.find(key)
+      @character ||= options.detect do |key, _value|
+        RenderCow.characters.find { _1 == key }
       end&.first
     end
 

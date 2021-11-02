@@ -16,6 +16,11 @@ class NavigationTest < ActionDispatch::IntegrationTest
     assert_includes response.body, 'Hello'
   end
 
+  test 'can render a file' do
+    get '/render_file'
+    assert_response :success
+  end
+
   test 'can render in views' do
     get '/cow_partial'
     assert_includes response.body, 'cowsay'

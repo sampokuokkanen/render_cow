@@ -5,6 +5,10 @@ class ApplicationController < ActionController::Base
 
   def normal; end
 
+  def render_file
+    render(file: 'test/dummy/app/views/application/normal.html.erb')
+  end
+
   def cow_partial; end
 
   RenderCow.characters.each do |character|
