@@ -3,9 +3,11 @@ module Cowsay
     class Spongebob < Base
       def template
         <<~TEMPLATE
+          #{@thoughts}
+           #{@thoughts}
                    ,____#{"                                                                              "}
-  #{@thoughts}     (% ..* #)#{"                                                                           "}
-    #{@thoughts}   (\\     .*\\ #{"                                                                          "}
+                  (% ..* #)#{"                                                                           "}
+                  (\\     .*\\ #{"                                                                          "}
                    *\\ @   (.\\ #{"                                                                         "}
                     (\\ , / , \\&#{"                                                                       "}
                .,,*((,.*%    @@.,,,,....,,,(#(,.,..,,.##{"                                              "}
