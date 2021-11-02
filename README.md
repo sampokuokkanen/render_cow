@@ -28,6 +28,18 @@ class ApplicationController < ActionController::Base
 end
 ```
 
+But that is not all! 
+You also have the following render-options: 
+```ruby
+[:spongebob, :beavis, :bunny, :cheese, :cow, :daemon, :dragon, :elephant, :frogs, :ghostbusters, :kitty, :koala, :moose, :ren, :sheep, :stegosaurus, :stimpy, :turkey, :turtle, :tux]
+```
+
+So feel free to call `render spongebob: iS thIs A mEme?` from your controllers!
+
+Todo: 
+Make Spongebob do the meme talk automatically. 
+There is already a gem for that. 
+
 ## Installation
 Add this line to your application's Gemfile:
 

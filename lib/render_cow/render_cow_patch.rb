@@ -1,24 +1,27 @@
 module RenderCow
   module RenderCowPatch
     def render(options = {}, args = {})
-      options[:plain] = cowspeach(options).then { RenderCow.moo(_1) } if cow?(options)
+      options[:plain] = cowspeach(options).then { RenderCow.moo(_1, character) } if character?(options)
       super
     end
 
     private
 
-    def cow?(options)
+    def character(options = {})
+      options[:cow] = options.delete(:cowsay) if options.key?(:cowsay)
+      @character ||= options.detect do |key|
+        RenderCow.characters.find(key)
+      end&.first
+    end
+
+    def character?(options)
       return unless options.is_a?(Hash)
 
-      options[:cow] || options[:cowsay]
+      character(options).present?
     end
 
     def cowspeach(options = {})
-      if options.key?(:cow)
-        options[:cow]
-      elsif options.key?(:cowsay)
-        options[:cowsay]
-      end
+      options[character]
     end
   end
 end
