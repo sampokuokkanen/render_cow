@@ -28,13 +28,13 @@ class NavigationTest < ActionDispatch::IntegrationTest
 
   test 'can render Spongebob' do
     get '/spongebob'
-    assert_includes response.body, 'Spongebob'
+    assert_includes response.body, 'Spongebob'.spongebobify
   end
 
   RenderCow.characters.each do |character|
     test "can render #{character}" do
       get "/#{character}"
-      assert_includes response.body, character.to_s.capitalize
+      assert_includes response.body, character == :spongebob ? character.to_s.spongebobify : character.to_s.capitalize
     end
   end
 end

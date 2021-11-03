@@ -4,6 +4,7 @@ PATH
     render_cow (0.4.1)
       cowsay
       rails (>= 6.0)
+      spongebobify (>= 0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -143,6 +144,7 @@ GEM
     rubocop-shopify (2.3.0)
       rubocop (~> 1.22)
     ruby-progressbar (1.11.0)
+    spongebobify (0.1.1)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)

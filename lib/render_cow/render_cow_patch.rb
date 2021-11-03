@@ -1,3 +1,4 @@
+require 'spongebobify'
 module RenderCow
   module RenderCowPatch
     def render(options = {}, args = {})
@@ -21,7 +22,8 @@ module RenderCow
     end
 
     def cowspeach(options = {})
-      options[character]
+      speach = options[character]
+      character == :spongebob ? speach.spongebobify : speach
     end
   end
 end

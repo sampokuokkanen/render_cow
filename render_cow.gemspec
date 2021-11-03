@@ -20,6 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency('cowsay')
   spec.add_dependency('rails', '>= 6.0')
+  spec.add_dependency('spongebobify', '>= 0.1.0')
   spec.add_development_dependency('byebug')
   spec.add_development_dependency('rubocop')
   spec.add_development_dependency('rubocop-shopify')
