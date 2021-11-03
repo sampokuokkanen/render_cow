@@ -41,9 +41,7 @@ You also have the following render-options:
 
 So feel free to call `render spongebob: iS thIs A mEme?` from your controllers!
 
-Todo: 
-Make Spongebob do the meme talk automatically. 
-There is already a gem for that. 
+Note that SpongeBob does the meme talk automatically and there is no way to turn it off. 
 
 ## Installation
 Add this line to your application's Gemfile:
